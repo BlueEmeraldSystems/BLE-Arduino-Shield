@@ -1,9 +1,10 @@
 // Arduino Bluetooth Low Energy demonstration sketch
 // GAP Slave (aka Peripheral) - GATT Server
-// 03-22-2015 by Jim Wootten
-// Updates should be available at https://github.com/TBD
+// 03-23-2015 by Jim Wootten
+// Updates should be available at https://github.com/BlueEmeraldSystems/BLE-Arduino-Shield
 //
 // Changelog:
+//      03-23-2015 - Updated comments
 //      03-22-2015 - Initial release
 
 /* ============================================
