@@ -4,6 +4,7 @@
 // Updates should be available at https://github.com/BlueEmeraldSystems/BLE-Arduino-Shield
 //
 // Changelog:
+//      03-28-2015 - Updated comments
 //      03-23-2015 - Updated comments
 //      03-22-2015 - Initial release
 
@@ -93,7 +94,7 @@ void setup() {
   digitalWrite(BLE_RESET_PIN, LOW);
   delay(100); // wait 100ms
   digitalWrite(BLE_RESET_PIN, HIGH);
-  delay(1000); // wait 500ms
+  delay(1000); // wait 1 sec
 
   // configure BLE112 io ports and turn shield LED off
   setupBLE112();        
