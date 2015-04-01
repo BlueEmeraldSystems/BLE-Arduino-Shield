@@ -36,9 +36,28 @@ To update firmware, run bgupdate.exe.
   
   If Pin 4 is configured as an output, the CC Debugger will show a 'Red LED' condition and will not update.
   
-  Example sketch to configure Pin4 as an input:
   
-
-
+  --
+  Example sketch to configure Pin 4 as an input:
+  
+  #define LED_PIN         13
+  #define BLE_RESET_PIN   4
+  
+  void setup() {
+  
+  pinMode(BLE_RESET_PIN, INPUT);
+  pinMode(LED_PIN, OUTPUT);
+  }
+  
+  void loop() {
+    // No code required, Led is flashed with short duty cycle as a user prompt
+    // the pin-mode software is loaded and running.
+    digitalWrite(LED_PIN, HIGHT);
+    delay(50);
+    
+    digitalWrite(LED_PIN, LOW);
+    delay(250);
+    }
+    
 
 
