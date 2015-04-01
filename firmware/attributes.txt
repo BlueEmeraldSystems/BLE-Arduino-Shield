@@ -1,0 +1,9 @@
+// This is a generated file from bgbuild.exe.
+// It provides enumerations for the GATT Characteristics entered in file 'gatt.xml'.
+// Enumeration names are the "id" entered within the 'gatt.xml' file.
+c_Port1_Config 17
+c_Port1_Data 20
+c_Port2_Config 24
+c_Port2_Data 27
+c_data1 32
+c_data2 36
