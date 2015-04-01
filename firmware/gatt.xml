@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+  <service uuid="1800">
+  <description>Generic Access Profile</description>
+    <characteristic uuid="2a00">
+      <properties read="true" const="true" />
+      <value>Arduino Bluetooth 4.0 Shield</value>
+    </characteristic>
+  
+    <!-- Appearance -->
+    <characteristic uuid="2a01">
+      <properties read="true" const="true" />
+      <!-- 128: Generic Computer, Generic category -->
+      <value type="hex">0080</value>
+    </characteristic>
+  </service>
+
+<!-- Manufacture Name String -->
+<service uuid="180A">
+<description>Device Information</description>
+  <characteristic uuid="2a29">
+    <properties read="true" const="true" />
+    <value>Blue Emerald Systems</value>
+  </characteristic>
+
+  <!-- Software Version -->
+  <characteristic uuid="2a28">
+    <properties read="true" const="true" />
+    <value>1.00</value>
+  </characteristic>
+
+  <!-- Firmware Revision String -->
+  <characteristic uuid="2a26">
+    <properties read="true" const="true" />
+    <value>1.03</value>
+  </characteristic>
+
+  <!-- Model Number String-->
+  <characteristic uuid="2a24">
+    <properties read="true" const="true" />
+    <value>101.70001</value>
+  </characteristic>
+</service>
+
+<!-- Custom Service -->
+<service uuid="1621784e-8997-4948-8e4c-ed28290083d5" advertise="true">
+<description>IO Port Service</description>
+
+  <!-- Custom read/write characteristic for setting port pin mode (read/write) -->
+  <characteristic uuid="242e2434-c9e3-4b35-a73f-348866b7047a" id="c_Port1_Config">
+    <description>Port0 Config</description>
+    <properties read="true" write="true" />
+    <value length="1" type="hex" />
+  </characteristic>
+
+  <!-- Custom read/write characteristic for accessing port 0 data (read/write) -->
+  <characteristic uuid="36c774df-6129-46c6-a8c0-23fec76b60f4" id="c_Port1_Data">
+    <description>Port0 Data</description>
+    <properties read="true" write="true" notify="true" />
+    <value length="1" type="hex" />
+  </characteristic>
+
+  <!-- Custom read/write characteristic for setting port 1 pin mode (read/write) -->
+  <characteristic uuid="93684dcc-545a-400f-baed-3afe465bb35f" id="c_Port2_Config">
+    <description> Port1 Pin Config</description>
+    <properties read="true" write="true" />
+    <value length="1" type="hex" />
+  </characteristic>
+
+  <!-- Custom read/write characteristic for accessing port 1 data (read/write) -->
+  <characteristic uuid="6a724b3e-f57a-4074-a1e5-421cfb08fcce" id="c_Port2_Data">
+    <description>Port1 Data</description>
+    <properties read="true" write="true" notify="true"/>
+    <value length="1" type="hex" />
+  </characteristic>
+</service>
+
+<!-- custom service for generic data transmission -->
+<service uuid="1061c040-cb63-11e4-8365-0002a5d5c51b" id="data_transceiver" advertise="true">
+  <description>Generic read and write service</description>
+
+  <characteristic uuid="72bc4760-cb63-11e4-9eab-0002a5d5c51b" id="c_data1">
+      <description>Read Data</description>
+      <properties read="true" indicate="true" />
+      <value variable_length="true" length="20" />
+  </characteristic>
+
+  <characteristic uuid="93bb8b60-cb63-11e4-8542-0002a5d5c51b" id="c_data2">
+      <description>Write Data</description>
+      <properties write="true" />
+      <value variable_length="true" length="20" />
+  </characteristic>
+
+  </service>
+</configuration>
