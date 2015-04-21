@@ -4,11 +4,11 @@ Bluetooth low energy Arduino Shield and support software
 This software is designed to work with the Blue Emerald System's Bluetooth low energy Arduino Shield version 1.1.  
 
 The Bluetooth Low Energy (BLE) Arduino Shield and this software has been tested on the following Arduino boards:
-  Arduino UNO R3
-  SparkFun RedBoard - Programmed with Arduino
+Arduino UNO R3
+SparkFun RedBoard - Programmed with Arduino
 Using the following version of the Arduino IDE from Arduino 
-  v1.0.6
-  v1.6.2
+v1.0.6
+v1.6.2
   
 Note, the Blue Emerald System's Bluetooth Low Energy Arduino Shield uses a BlueGiga BLE112 BLE module.
 
