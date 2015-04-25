@@ -25,4 +25,4 @@ What is needed for testing:
 
 5. BLE scanning apps or tools such as LightBlue (free) and other iOS apps, and nRF Master (free) and other Android apps. (user provides)
 
-The BLE112 BLE module on board Blue Emerald System's Bluetooth Low Energy Arduino Shield comes with a "BLE113 BGAPI" firmware image flashed on them and two BLE profiles.  The profile characteristics that work with BLE_Generic_Read_Write.ino are called "Read Data" and "Write Data".
+The BLE112 BLE module on board the Blue Emerald System's Bluetooth Low Energy Arduino Shield comes preloaded with the "BLE112 BGAPI" firmware image flashed on it and two BLE profiles.  The profile characteristics that work with BLE_Generic_Read_Write.ino are called "Read Data" and "Write Data".
