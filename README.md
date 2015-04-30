@@ -18,6 +18,7 @@ What is needed for testing:
 1. Arduino board such as Arduino UNO R3 or SparkFun RedBoard. (user provides)
 
 2. Blue Emerald System's Bluetooth low energy Arduino Shield. (user provides)
+http://www.ebay.com/itm/Arduino-Bluetooth-low-energy-BLE-shield-/281673461736?pt=LH_DefaultDomain_0&hash=item41950befe8
 
 3. BLE_Generic_Read_Write.ino Arduino Sketch.  (from this repository)
 
