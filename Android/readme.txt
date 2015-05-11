@@ -8,7 +8,7 @@ In: Analog pins A0, A1, A2, A3
 
 -- Installation --
 1) Copy and install Application file 'ArduinoBLEShield.apk'.
-2) Build and upload 'sketch_Bluegig_SimpleArduino.ino'
+2) Build and upload 'sketch_Bluegiga_Simple_Arduino.ino'
 
 -- Usage --
 1) Turn on Arduino
